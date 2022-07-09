@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/sce.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+    <!-- 搜索登录 -->
+    <div class="search ">
+        <!-- 搜索 -->
+        <div class="input-group col-xs-4 seac col-xs-offset-4 ">
+            <input type="text" class="form-control" placeholder="请输入...">
+            <span class="input-group-addon">
+                <a href="" class=" glyphicon glyphicon-search"></a>
+            </span>
+        </div>
+        <!-- 登录  -->
+        <div class=" login" data-toggle="modal" data-target="#exampleModal">登录</div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <img class="img" src="./img/LOGO2.jpg" alt="">
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="control-label">用户名/手机号:</label>
+                                <input type="text" class="form-control" id="user-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="control-label">密码：</label>
+                                <input type="text" class="form-control" id="password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="./login.html" target="_black"><button type="button" class="btn">注册</button></a>
+                        <button type="button" class="btn">登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 导航 -->
+    <nav class="navbar navbar-inverse  ">
+        <div class="container">
+            <div class="navbar-header ">
+                <a href="#" class=""><img class="img" src="./img/LOGO.jpg" alt=""></a>
+                <button class="navbar-toggle " data-toggle="collapse" data-target="#a">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-left " id="a">
+                <ul class="nav navbar-nav ">
+                    <li class=""><a href="index.html" target="_blank">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" role="button" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">景观
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="landScenery.html" target="_blank">地文景观</a></li>
+                            <li><a href="#">水文景观</a></li>
+                            <li><a href="#">生物景观</a></li>
+                            <li><a href="#">气象与天象景观</a></li>
+                            <li><a href="#">遗址与遗迹景观</a></li>
+                            <li><a href="#">建筑与城市景观</a></li>
+                            <li><a href="#">人文活动景观</a></li>
+                            <li><a href="#">名录</a></li>
+
+                        </ul>
+                    </li>
+                    <li class=""><a href="#">谈资</a></li>
+                    <li class=""><a href="#">作者</a></li>
+                    <li class=""><a href="#">大讲堂</a></li>
+                    <li class="">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-bullhorn"></span>
+                            活动</a>
+                    </li>
+                    <li class="">
+                        <a href="mall.html" target="_blank">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>商城
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="./img/carousel/lbt1.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="./img/carousel/lbt2.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="./img/carousel/lbt3.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="./img/carousel/lbt4.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 焦点 -->
+    <div id="focu">
+        <div class="container ">
+            <h3 class="page-header">焦点</h3>
+            <div class="row focus">
+                <div class="col-md-4 col-xs-12 ">
+                    <div class="thumbnail">
+                        <img src="./img/focus/volcano.jpg" alt="">
+                        <div class="caption">
+                            <h3>火山爆发<small>离我们有多远？</small></h3>
+                            <p>今年1月15日，汤加海底火山发生剧烈喷发，造成了巨大的灾难，引起了人们对火山的关注，也引发了国人的疑问：众所周知，我国是地质灾害高发的国家，那我国有没有可能喷发的火山？火山爆发会不会也发生在我们身边？一旦真的发生火山爆发，有可能提前预报以实现避险吗？来源《中国国家地理》2022年
+                            </p>
+                            <p><a href="#" class="btn " role="button">详情</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 ">
+                    <div class="thumbnail">
+                        <img src="./img/focus/hexizoulang.jpg" alt="">
+                        <div class="caption">
+                            <h3>河西走廊<small>相机找回的古城传奇</small></h3>
+                            <p>在河西走廊的西部，在漫长的岁月中，因为战乱起落、河流摆动、古今绿洲变迁等原因，留下了大小约百余个古城遗址，时代由汉到清，历时约2000年。广袤而干燥的荒原戈壁如同一座巨大的博物馆，将它们一一收藏。自《中国国家地理》2022年4期
+                            </p>
+                            <p><a href="#" class="btn " role="button">详情</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 ">
+                    <div class="thumbnail">
+                        <img src="./img/focus/taihu1.jpg" alt="">
+                        <div class="caption">
+                            <h3>太湖<small>江南水网的“心脏”</small></h3>
+                            <p>全国河道分布密度最大的太湖流域，其水系循环是以太湖为中心来运转的。在水系“两进三出”的汇水与分水格局中，太湖就是掌控全局的那个“总开关”。来源《中国国家地理》2022年2期
+                            </p>
+                            <p><a href="#" class="btn " role="button">详情</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 标签页 导航 -->
+    <div id="tab">
+        <div class="container">
+            <h4>社区</h4>
+            <div class="row ">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a data-toggle="tab" href="#menu1">风土人情</a></li>
+                    <li><a data-toggle="tab" href="#menu2">城市中国</a></li>
+                    <li><a data-toggle="tab" href="#menu3">乡村印象</a></li>
+                    <li><a data-toggle="tab" href="#menu4">风景物语</a></li>
+                </ul>
+                <div class="tab-content text-center">
+                    <div id="menu1" class="tab-pane active">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="thumbnail ">
+                                    <a href="#">
+                                        <img src="./img/community/comm1.jpg" alt="">
+                                        <p>盐城黄海湿地——落潮留痕沙洲如画</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="thumbnail ">
+                                    <a href="#">
+                                        <img src="./img/community/comm2.jpg" alt="">
+                                        <p>中国第一条民营铁路——个碧石铁路</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="panel panel-default">
+                                    <!-- Default panel contents -->
+                                    <div class="panel-heading">社区推荐</div>
+                                    <!-- List group -->
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                行走在邓家围屋，静听岁月的轻语
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                琥珀，带你穿越至远古的宝石
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                那扇古老的窗
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                山南秘境勒布沟
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                一路琼花寻纳楼
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu2" class="tab-pane">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">社区推荐</div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                一路向黔 , 绕不过的古城镇远
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                南昌古风物略记
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                生活的印记
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                苏州平江路，市中心的历史古迹！
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="thumbnail ">
+                                    <a href="#">
+                                        <img src="./img/community/comm5.jpg" alt="">
+                                        <p>重庆：世界上唯一建在平行岭谷的大城市</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="thumbnail ">
+                                    <a href="#">
+                                        <img src="./img/community/comm7.jpg" alt="">
+                                        <p>成都寻旧</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu3" class="tab-pane">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="thumbnail ">
+                                    <a href="#">
+                                        <img src="./img/community/comm8.jpg" alt="">
+                                        <p>梨花深处有人家——黎里古镇</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="thumbnail ">
+                                    <a href="#">
+                                        <img src="./img/community/comm9.jpg" alt="">
+                                        <p>走进大凉山</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">社区推荐</div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                同里水乡有名园
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                篁岭不唯晒秋图
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                传统村落：蜀道遗韵青林口
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                盐背夫—巴盐古道上的精神化石
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                素靥青衣幽呈坎
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                千年不倒，豪宅碉楼
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu4" class="tab-pane">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">社区推荐</div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                锥子山长城，中国最美的野长城
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                芦子沟里藏古宅
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                桥韵
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                深秋烟雾偎婺源
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#">
+                                                探秘独龙江
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="thumbnail ">
+                                    <a href="#">
+                                        <img src="./img/community/comm4.jpg" alt="">
+                                        <p>聆听六百年前的屯堡文化</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="thumbnail ">
+                                    <a href="#">
+                                        <img src="./img/community/comm3.jpg" alt="">
+                                        <p>篁岭不唯晒秋图</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="svg">
+            <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+                class="transition duration-300 ease-in-out delay-150">
+                <path
+                    d="M 0,400 C 0,400 0,200 0,200 C 152.07142857142858,235.07142857142856 304.14285714285717,270.1428571428571 401,254 C 497.85714285714283,237.85714285714286 539.5,170.5 653,164 C 766.5,157.5 951.8571428571429,211.85714285714283 1095,228 C 1238.142857142857,244.14285714285717 1339.0714285714284,222.07142857142858 1440,200 C 1440,200 1440,400 1440,400 Z"
+                    stroke="none" stroke-width="0" fill="#000000ff"
+                    class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- 景观 -->
+    <div id="scenery">
+
+        <h3 class="page-header black">景观</h3>
+        <!-- 轮播图 -->
+        <div class="apple-retail">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide init">
+                        <div class="inner">
+                            <figure><img src="./img/scenery/scen1.jpg"></figure>
+                            <div class="gallery-item-desc">
+                                <h3 class="typography-label">伊昭公路 它是穿越乌孙山的最快捷径</h3>
+                                <p class="typography-body">
+                                    呈横“V”字形的天山夹角之间，长122公里的伊昭公路纵穿而过。这条公路不仅是以最短距离穿越乌孙山的捷径，并且...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner">
+                            <figure><img src="./img/scenery/scen2.jpg"></figure>
+                            <div class="gallery-item-desc">
+                                <h3 class="typography-label">多面贡嘎 从地面到直升机360°看贡嘎</h3>
+                                <p class="typography-body">
+                                </p>“蜀山之王”贡嘎山，以海拔7556米的高度屹立在青藏高原与四川盆地之间的过渡地带上，尖峭奇锐的金字塔形角峰，穿云破雾，卓立于山脉之巅...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner">
+                            <figure><img src="./img/scenery/scen3.jpg"></figure>
+                            <div class="gallery-item-desc">
+                                <h3 class="typography-label">景观：河流</h3>
+                                <p class="typography-body">
+                                    弯弯曲曲的莫尔格勒河像新抛光的银链般闪亮，也成为陈巴尔虎草原上最美的地方。这是一条发育在冲积平原上的蜿蜒型河流...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner">
+                            <figure><img src="./img/scenery/scen4.jpg"></figure>
+                            <div class="gallery-item-desc">
+                                <h3 class="typography-label">湖冰景观：姗姗来迟的大地之美</h3>
+                                <p class="typography-body">
+                                    2022年2月，吉林白城洮南市四海湖的湖面上出现了一种十分罕见的冰雪奇观——“汤圆湖”。湖面下全是圆滚滚的白色雪球，直径在...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner">
+                            <figure><img src="./img/scenery/scen5.jpg"></figure>
+                            <div class="gallery-item-desc">
+                                <h3 class="typography-label">喜马拉雅另一侧的秘境</h3>
+                                <p class="typography-body">
+                                    拉达克，位于喜马拉雅的另一侧，印控克什米尔地区。因为地理以及政治原因，现在这里对大多数中国人来说都是一个非常陌生的所在...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <!--左箭头-->
+                <div class="swiper-button-next"></div>
+                <!--右箭头-->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 推广 -->
+    <div id="extension">
+        <div class="container ">
+            <h3 class="page-header">推广</h3>
+            <div class="row ext">
+                <div class="col-md-6 col-xs-12">
+                    <div class="text-right">
+                        <a href="#"><span>内蒙古100个最美观景拍摄点榜单</span>
+                            <img src="./img/extension/neimeng.jpeg" class="img-thumbnail"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="left">
+                        <a href="#"><img src="./img/extension/sichuan.jpg" class="img-thumbnail">
+                            <span>四川100个最美观景拍摄点榜单</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row ext ext1">
+                <div class="col-md-6 col-xs-12">
+                    <div class="text-right ">
+                        <a href="#"><span>青海100个最美观景拍摄点榜单</span>
+                            <img src="./img/extension/qinghai.jpg" class="img-thumbnail"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="left">
+                        <a href="#"><img src="./img/extension/xizang.jpg" class="img-thumbnail">
+                            <span>西藏100个最美观景拍摄点榜单</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 征集 -->
+            <h4>征集</h4>
+            <div class="row collect">
+                <div class="col-md-3 col-xs-6 ">
+                    <div class="item1">
+                        <a href="#">
+                            <p>极简</p>
+                            <img src="./img/extension/exten1.jpg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="item1">
+                        <a href="#">
+                            <p>美食</p>
+                            <img src="./img/extension/exten2.jpg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="item1 ite">
+                        <a href="#">
+                            <p>烟雾</p>
+                            <img src="./img/extension/exten3.jpg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="item1 ite">
+                        <a href="#">
+                            <p>不简单的职业</p>
+                            <img src="./img/extension/exten4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 回到顶部 -->
+
+        <div class="top">
+            <div class="text-center">
+                <a href="#top">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container text-center">
+            <div class="row text">
+                <div class="col-md-4 col-xs-12 ">
+                    <img src="./img/LOGO.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <h4>关于我们</h4>
+                    <a href="#">中国国家地理</a>
+                    <a href="#">中华遗产</a>
+                    <a href="#">博物</a>
+                    <a href="#">中国国家地理网</a>
+                    <a href="#">官方微博</a>
+                    <a href="#">官方微信</a>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <h4>友情链接</h4>
+                    <a href="#">人民网旅游</a>
+                    <a href="#">新华网图片频道</a>
+                    <a href="#">科普中国网</a>
+                    <a href="#">国家摄影</a>
+                    <a href="#">中国摄影网</a>
+                    <a href="#">环球摄影</a>
+                </div>
+            </div>
+            <div class="row author">
+                <div class="col-xs-12">20前端3班 20120300741 黄燕婷</div>
+            </div>
+            <div class="row ">
+                <div class="col-xs-12 bottom text-center">
+                    <p>Copyright © 2001-2017 Chinese National Geography Press. All rights reserved.</p>
+                    <p>优秀科普网站 京ICP证090072号 京ICP备10014304号-4 京ICP备10014304号-5 京公网安备11010502048871 新出网证（京）字 049号 出版物经营许可证
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            speed: 700,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            on: {
+                init: function () {
+                    this.slides.removeClass('init');
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+        swiper.$el.parent('.apple-retail')[0].onmouseover = function () {
+            swiper.$el.addClass('mouse-hover');
+        };
+        swiper.$el.parent('.apple-retail')[0].onmouseout = function () {
+            swiper.$el.removeClass('mouse-hover');
+        };
+
+        // 轮播图
+        $('.carousel').carousel({
+            interval: 3000
+        })
+    </script>
+</body>
+
+</html>
